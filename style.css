@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #96cfff;
+    color: #fff;
+}
+
+#watch-container{
+    width: 700px;
+    height: 60vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    border-radius: 20px;
+    position: relative;
+}
+
+#watch-container::after{
+    content: "";
+    width: 95%;
+    height: 7px;
+    background-color: #000;
+    position: absolute;
+    bottom: -15px;
+    filter: blur(0.8rem);
+}
+
+#discription{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 3em;
+    color: #96cfff;
+    text-transform:capitalize;
+    margin-bottom: 10px;
+}
+
+p{
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+span{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3em;
+    font-style: normal;
+}
+
+#button-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+button{
+    width: calc(70% / 3);
+    height: 60px;
+    font-size: 2em;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #96cfff;
+}
+
+button:hover{
+    background-color: #96cfff;
+    color: #fff;
+    box-shadow: 1px 1px 3px #fff;
+}
+
+button:focus{
+    background-color: #96cfff;
+    color: #fff;
+    box-shadow: 1px 1px 3px #fff;
+}
+
+@media(max-width: 1200px ){
+    #watch-container{
+        width: 90%;
+        height: 90vh;
+    }
+
+    #button-container{
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        width: 90%;
+        height: 70px;
+        font-size: 3em;
+        border-radius: 20px;
+        margin-bottom: 30px;
+    }
+    
+}
