@@ -97,7 +97,7 @@ button:focus{
 @media(max-width: 1200px ){
     #watch-container{
         width: 90%;
-        height: 90vh;
+        height: 85vh;
     }
 
     #button-container{
@@ -109,11 +109,32 @@ button:focus{
     }
 
     button{
-        width: 90%;
-        height: 70px;
-        font-size: 3em;
+        width: 65%;
+        height: 60px;
+        font-size: 2em;
+        border: 2px solid #96cfff;
         border-radius: 20px;
         margin-bottom: 30px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        position: relative;
+        box-shadow: #000 0px 50px 100px -20px,
+         #000 0px 30px 60px -30px, 
+         #000 0px -2px 6px 0px inset;
+    }
+
+    button:focus{
+        box-shadow: none;
+        background-color: #fff;
+        color: #000;
+        border: 5px solid #96cfff;
+    }
+
+    p{
+        font-size: 1.2em;
+    }
+
+    span{
+        font-size: 2.4em;
     }
     
 }
